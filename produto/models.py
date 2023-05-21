@@ -3,6 +3,8 @@ from PIL import Image
 import os
 from django.conf import settings
 
+from utils import utils
+
 
 class Produto(models.Model):
     nome = models.CharField(max_length=255)
@@ -21,6 +23,14 @@ class Produto(models.Model):
             ('S', 'Simples'),
         )
     )
+
+    def get_preco_formatado(self):
+        return utils.formata_preco(self.preco_marketing)
+    get_preco_formatado.short_description = 'Preço'
+
+    def get_preco_promocional_formatado(self):
+        return utils.formata_preco(self.preco_marketing_promocional)
+    get_preco_promocional_formatado.short_description = 'Preço Promo.'
 
     @staticmethod
     def resize_image(img, new_width=800):
