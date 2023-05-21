@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% load filters %}
+{% load omfilters %}
 
 {% block titulo %}{{ produto.nome }} | {% endblock %}
 
@@ -79,8 +79,8 @@
 <div class="row">
     <div class="col-lg-12">
         <div class="mt-5 mb-5">
-            <h2 class="text-center mt-5">{{ produto.nome }}</h2>
-            {{ produto.descricao_Longa|linebreaks }}
+            <h2 class="text-center">{{ produto.nome }}</h2>
+            {{ produto.descricao_longa|linebreaks }}
         </div>
     </div>
 </div>
