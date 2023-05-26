@@ -11,8 +11,6 @@ Abra o terminal e execute os seguintes comandos:
 -  'python -m pip install django django-debug-toolbar django-crispy-forms pillow'
 -  'python manage.py migrate'
 
-📌Obs: Isso só irá funcionar se a integração com o banco de dados estiver correta!
-
 ### 🚀Desenvolvedores do projeto:
 <table>
   <tr>
