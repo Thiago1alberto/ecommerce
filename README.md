@@ -4,8 +4,7 @@ A aplicação de e-commerce de produtos geek envolveu o desenvolvimento de uma p
 Definimos sua estrutura e funcionalidades para projetar uma interface amigável e intuitiva, que permita aos usuários navegar facilmente pelos produtos, realizar compras de forma segura e acompanhar o status de seus pedidos. 
 
 ### 💡Como executar a aplicação:
-
-- Abra o terminal e execute os seguintes comandos:
+Abra o terminal e execute os seguintes comandos:
 -  'python -m venv venv'
 -  'venv\Scripts\activate'
 -  'python -m pip install --upgrade pip setuptools wheel --user'
